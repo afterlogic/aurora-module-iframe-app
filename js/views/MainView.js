@@ -24,6 +24,7 @@ function CIframeAppView()
 	 * Text for displaying in browser title.
 	 */
 	this.browserTitle = ko.observable(TextUtils.i18n('%MODULENAME%/HEADING_BROWSER_TAB'));
+        this.authToken = ko.observable($.cookie('AuthToken'));
 	
 	App.broadcastEvent('%ModuleName%::ConstructView::after', {'Name': this.ViewConstructorName, 'View': this});
 }
