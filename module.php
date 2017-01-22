@@ -8,7 +8,7 @@ class IframeAppModule extends AApiModule
 	{
 		$this->oApiIframeAppManager = $this->GetManager();
 		
-		$this->setObjectMap('CUser', array(
+		$this->extendObject('CUser', array(
 				'EnableModule' => array('bool', true)
 			)
 		);
